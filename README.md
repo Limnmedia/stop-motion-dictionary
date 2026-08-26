@@ -16,6 +16,18 @@ The current migrated database contains 1,077 entries. The 36 records without a r
 
 Run `python .\validate_database.py` to verify the committed database.
 
+## Candidate-term discovery
+
+The preserved Logseq graph was scanned for unresolved `[[wikilinks]]`, index/list pages, and research-source pages. The resulting auditable candidate pool is in [`reports/candidate-pool/`](reports/candidate-pool/): 1,324 unique unresolved labels across 3,419 references, plus the 14 external resources from the `Film & Animation Dictionaries & Glossaries` source-list page.
+
+Rebuild the report with:
+
+```powershell
+python .\discover_candidates.py `
+  D:\LIMNMEDIA_LLC\04-LIMN-EDU\LIMN-WIKI\dictionary\old-logseq `
+  .\reports\candidate-pool
+```
+
 ## Tables
 
 - `terms`: one row per Logseq page, including the original Markdown.
