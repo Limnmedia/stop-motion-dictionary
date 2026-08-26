@@ -28,6 +28,17 @@ python .\discover_candidates.py `
   .\reports\candidate-pool
 ```
 
+Normalize the recovered pool for editorial review with:
+
+```powershell
+python .\normalize_candidates.py `
+  .\limn_stop_motion_dictionary.sqlite `
+  .\reports\candidate-pool\candidate_terms.tsv `
+  .\reports\candidate-pool\normalized
+```
+
+The normalized report currently classifies candidates as 166 provisional `NEW TERM`, 108 `ALIAS`, 30 `MERGE/DUPLICATE`, 4 `NOT A TERM`, and 1,016 `REVIEW`. These are conservative recommendations with evidence, not automatic page-creation decisions.
+
 ## Tables
 
 - `terms`: one row per Logseq page, including the original Markdown.
