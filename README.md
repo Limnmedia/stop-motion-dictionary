@@ -1,6 +1,10 @@
 # LIMNMEDIA Stop-Motion Dictionary
 
-This directory contains the canonical local SQLite database generated from the preserved Logseq page export. The source graph is read-only and is not modified by the migration.
+**The LIMNMEDIA Stop-Motion Dictionary organizes terminology and reference material to help artists, students, and educators understand the language of stop-motion production.**
+
+Stop-motion knowledge spans animation, cameras, puppets, sets, fabrication, and visual effects, often using specialized or overlapping terms. The dictionary project preserves and structures those references so they can be maintained and reused.
+
+This repository currently contains the canonical local SQLite database generated from a preserved Logseq page export; it is a data and migration repository, not a finished public dictionary website. The source graph is read-only and is not modified by the migration.
 
 ## Build or rebuild
 
