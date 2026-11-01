@@ -6,6 +6,8 @@ Stop-motion knowledge spans animation, cameras, puppets, sets, fabrication, and 
 
 This repository currently contains the canonical local SQLite database generated from a preserved Logseq page export; it is a data and migration repository, not a finished public dictionary website. The source graph is read-only and is not modified by the migration.
 
+See [Dictionary Provenance and Retention](PROVENANCE_AND_RETENTION.md) for the boundary between the committed database, the protected Logseq authoring archive, and offline recovery copies.
+
 ## Build or rebuild
 
 ```powershell
